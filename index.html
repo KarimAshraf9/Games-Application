@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section
+      class="w-100 vh-100 bg-black bg-opacity-50 z-1 position-fixed top-0 left-0 right-0 bottom-0 d-none d-flex justify-content-center align-items-center"
+      id="loader"
+    >
+
+      <i
+        class="fas fa-circle-notch fa-spin fa-5x text-danger"
+      ></i>
+
+    </section>
+
+    <section class="gamesSection">
+      <div class="backGroundImage">
+        <img src="./images/wraper.png" class="w-100" alt="wraper" />
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg w-75 m-auto rounded-4" id="pp"
+      >
+        <div class="container">
+          <img src="./images/logo-sm.png" alt="" />
+          <h5 class="navbar-brand text-white ms-1 mb-0 fst-italic">
+            GAME REVIEWS
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="gameCards">
+        <div class="container">
+          <div class="row pt-5 gy-4">
+            <!-- <div class="col-3">
+                        <div class="gameCard rounded pt-3">
+                            <figure class="px-3">
+                                <img src="./images/thumbnail.jpg" class="w-100 rounded-top" alt="">
+                            </figure>
+                            <div class="d-flex justify-content-between px-3">
+                                <h3 class="text-white fw-medium mb-0">Tarisland</h3>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="text-center px-3">
+                                <p class="text-white opacity-50">A,cross-platform,MMORPG,developed,by,Level,Infinite,and</p>
+                            </div>
+                            
+                            <footer class="d-flex justify-content-between text-white py-2 px-3">
+                                <span class="badge">MMORPG</span>
+                                <span class="badge">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gamesSectionDetails d-none">
+      <div class="gameDetail container text-white">
+        <div class="d-flex justify-content-between align-items-center py-4">
+          <h3 class="m-0">Details Game</h3>
+          <div class="d-flex justify-content-center align-items-center closeButton">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-4">
+                    <figure>
+                        <img src="./images/thumbnail.jpg" class="w-100" alt="">
+                    </figure>
+                </div> -->
+
+          <!-- <div class="col-8">
+                    <h3>Title: Tarisland</h3>
+                    <p>Category: <span class="badge text-bg-info">MMORPG</span></p>
+                    <p>Platform: <span class="badge text-bg-info">Windows</span></p>
+                    <p>Status: <span class="badge text-bg-info">Live</span></p>
+                    <p class="gameDesc">Tarisland is a free-to-play cross-platform MMORPG developed by Level Infinite and Published by Tencent. Available on PC and mobile devices, the game allows players to easily move between both, taking the game with them when they can’t be at their desk. The game is designed to appeal to players of MMOs like World of Warcraft, offering players nine playable classes and 18 specializations. Each class features an extensive talent tree system and can be customized. Players of existing MMOs will be familiar with the standard tank, DPS, and healer lineup, necessary for the game’s classic raid and dungeon system. Explore a vast game world and solve mysteries. Pick up various trades such as gathering, mining, and crafting, and sell your items on the auction house.</p>
+                    <button class="btn text-white btn-outline-warning">Show Game</button>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
