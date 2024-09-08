@@ -5,8 +5,9 @@ const games = await fetchGames("mmorpg");
 displayGames(games);
 attachCardGameEventListener();
 
-
-const closeGameSectionDetails = document.querySelector(".gameDetail i.fa-xmark");
+const closeGameSectionDetails = document.querySelector(
+  ".gameDetail i.fa-xmark"
+);
 
 document.querySelectorAll(".navbar a").forEach(function (anchor) {
   anchor.addEventListener("click", async function () {
@@ -20,12 +21,10 @@ document.querySelectorAll(".navbar a").forEach(function (anchor) {
     displayGames(games);
 
     attachCardGameEventListener();
-
   });
 });
 
- 
-function attachCardGameEventListener(){
+function attachCardGameEventListener() {
   const gamesCards = document.querySelectorAll(".gameCard");
   const gamesSection = document.querySelector(".gamesSection");
   const gamesSectionDetails = document.querySelector(".gamesSectionDetails");
@@ -34,26 +33,20 @@ function attachCardGameEventListener(){
   gamesCards.forEach((card, index) => {
     card.addEventListener("click", async function () {
       loadingComponent.classList.toggle("d-none");
-  
+
       const gameId = games[index].id;
-      console.log('11');
       const gameData = await fetchGameData(gameId);
-      console.log('22');
-  
-  
+
       displayGameData(gameData);
-      console.log('33');
-  
+
       gamesSection.classList.toggle("d-none");
       gamesSectionDetails.classList.toggle("d-none");
       loadingComponent.classList.toggle("d-none");
 
-      const gameLink = document.querySelector('.gameDetail button');
-      gameLink.addEventListener('click',function(){
-        open(`${gameData.game_url}`)
-      })
-
-
+      const gameLink = document.querySelector(".gameDetail button");
+      gameLink.addEventListener("click", function () {
+        open(`${gameData.game_url}`);
+      });
     });
   });
 }
@@ -65,5 +58,3 @@ closeGameSectionDetails.addEventListener("click", function () {
   gamesSection.classList.toggle("d-none");
   gamesSectionDetails.classList.toggle("d-none");
 });
-
-

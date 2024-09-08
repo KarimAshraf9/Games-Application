@@ -1,147 +1,135 @@
 @font-face {
-    src: url(../fonts/NerkoOne-Regular.ttf);
-    font-family: NerkoOne;
+  src: url(../fonts/NerkoOne-Regular.ttf);
+  font-family: NerkoOne;
 }
 
 @font-face {
-    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
-    font-family: Comfortaa;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+  font-family: Comfortaa;
 }
 
-:root{
-    --bg-main: #272B30
+:root {
+  --bg-main: #272b30;
 }
 
-body{
-    background-color: var(--bg-main);
-    font-family: Comfortaa;
+body {
+  background-color: var(--bg-main);
+  font-family: Comfortaa;
 }
 
-h3,h5{
-    font-family: NerkoOne;
+h3,
+h5 {
+  font-family: NerkoOne;
 }
 
-
-div.backGroundImage img{
-    max-height: 30vh;
-    object-fit: cover;
+div.backGroundImage img {
+  max-height: 30vh;
+  object-fit: cover;
 }
 
-div.gameCard{
-    background-color: var(--bg-main);
-    border: 1px solid rgba(0, 0, 0, 0.176);
-    cursor: pointer;
-    transition: transform 0.5s ease;
+div.gameCard {
+  background-color: var(--bg-main);
+  border: 1px solid rgba(0, 0, 0, 0.176);
+  cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 div.gameCard :nth-child(1),
 div.gameCard :nth-child(2),
-div.gameCard :nth-child(4){
-    filter: grayscale(50%);
-    transition: filter 0.5s ease;
+div.gameCard :nth-child(4) {
+  filter: grayscale(50%);
+  transition: filter 0.5s ease;
 }
 
-div.gameCard:hover{
-    transform: scale(1.05);
-    :nth-child(1),:nth-child(2),:nth-child(4){
-        filter: none;
-    }
+div.gameCard:hover {
+  transform: scale(1.05);
+  :nth-child(1),
+  :nth-child(2),
+  :nth-child(4) {
+    filter: none;
+  }
 }
 
-div.gameCard h3{
-    font-size: 14px;
+div.gameCard h3 {
+  font-size: 14px;
 }
 
-div.gameCard h3 + span{
-    font-size: 12px;
+div.gameCard h3 + span {
+  font-size: 12px;
 }
 
-footer .badge{
-    font-size: 10.5px;
-    background-color: rgb(50, 56, 62);
+footer .badge {
+  font-size: 10.5px;
+  background-color: rgb(50, 56, 62);
 }
 
-footer{
-    border-top: 1px solid rgba(0, 0, 0, 0.176);
-    background-color: rgba(33, 37, 41, 0.03);
-
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.176);
+  background-color: rgba(33, 37, 41, 0.03);
 }
 
-div.gameCard p{
-    font-size: 14px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; 
-            line-clamp: 2; 
-    -webkit-box-orient: vertical;
- 
+div.gameCard p {
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
-
-
-
-.hhhh{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+.hhhh {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-nav.navbar{
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #3A497B;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px 0px;
-} 
-
-nav.navbar img{
-    max-width: 40px;
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #3a497b;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px 0px;
 }
 
-h5.navbar-brand{
-    font-size: 20px;
+nav.navbar img {
+  max-width: 40px;
 }
 
-#navbarSupportedContent a{
-    color: white;
-    font-size: 12.25px;
+h5.navbar-brand {
+  font-size: 20px;
+}
+
+#navbarSupportedContent a {
+  color: white;
+  font-size: 12.25px;
 }
 
 #navbarSupportedContent .active {
-    color: #09c ;
+  color: #09c;
 }
 #navbarSupportedContent .nav-link:hover {
-    color: #09c ;
-
+  color: #09c;
 }
 
-
-
-
-
-
-
-.gameDetail h5{
-    font-size: 28px;
+.gameDetail h5 {
+  font-size: 28px;
 }
 
-.gameDetail p{
-    font-size: 16px;
+.gameDetail p {
+  font-size: 16px;
 }
 
-.gameDetail p.gameDesc{
-    font-size: 14px;
+.gameDetail p.gameDesc {
+  font-size: 14px;
 }
 
 .closeButton {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .closeButton:hover {
-    border: solid 1px white;
-    border-radius: 4px;
-    cursor: pointer;
+  border: solid 1px white;
+  border-radius: 4px;
+  cursor: pointer;
 }
-  
-

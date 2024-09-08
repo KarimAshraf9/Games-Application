@@ -1,5 +1,3 @@
-
-
 export async function fetchGameData(gameId) {
   let response = await fetch(
     `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${gameId}`,
@@ -36,5 +34,3 @@ export function displayGameData(gameData) {
 
   document.querySelector(".gameDetail .row").innerHTML = cartoona;
 }
-
-
